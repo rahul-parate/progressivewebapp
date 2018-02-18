@@ -16,7 +16,7 @@ exports.encrypt_content = function(req, res) {
 	  var resdata =  data;
 	  var datasplit = String(resdata).split(']');
 	  var enarray = datasplit[0].replace(/\[/g,"");
-	  var enarray = enarray.replace(/\n/g,"");
+	  var enarray = enarray.replace(/\n/g,"").trim();
 	  console.log(enarray);
 	  console.log(datasplit);
 	  var resultdata = datasplit[1].replace(/\n/g,"");
