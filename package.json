@@ -1,0 +1,22 @@
+{
+  "name": "My_project",
+  "version": "1.0.0",
+  "description": "myself",
+  "main": "server.js",
+  "scripts": {
+    "test": "./server.js",
+    "start": "nodemon server.js"
+  },
+  "keywords": [
+    "woofie"
+  ],
+  "author": "Woofie",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  },
+  "dependencies": {
+    "express": "^4.16.1",
+    "mongoose": "^4.12.1"
+  }
+}

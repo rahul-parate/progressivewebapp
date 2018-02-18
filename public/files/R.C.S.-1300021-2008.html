@@ -1,0 +1,275 @@
+<div id="caseHistoryDiv" style="">
+<meta charset="utf-8"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>Case History</title>
+<style type="text/css">
+form.historyform
+{	font-size:1em;
+}
+tbody
+{	font-size:1em;
+}
+
+#nextDate {   
+  animation-duration:4000ms;
+  animation-name: blink;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes blink {
+  from {
+	opacity: 1;
+  }
+
+  to {
+	opacity: 0;
+  }
+}
+
+.h3class{
+font-size:1em;
+padding-top:-10px;
+
+font-weight:normal;
+margin-bottom:5px;
+
+}
+
+.h2class{
+font-size:1.1em;
+font-weight:normal;
+padding-top:-10px;
+margin-bottom:5px;
+}
+.h1classH{
+font-size:1.2em;
+font-weight:bold;
+margin-top:7px;
+}
+.controlstyle
+{ display:none;}
+
+
+.table_o{
+border: 1px solid #555;
+text-align:center;
+}
+.cell_o{
+    border-bottom: 1px solid #555;
+	border-right: 1px solid #555;
+    text-align: left;
+	display: table-cell;
+}
+.cell_o:last-child{
+	border-right: 0px solid #555;
+}
+.table_r{
+border: 1px solid red;
+background-color:#FBF6D9;
+color:red;
+}
+.table_r &gt; tbody &gt; tr &gt; td {border-top:1px solid red;padding:5px;}
+.row_o{
+display:table-row;
+}
+
+
+label {
+    font-weight: normal;
+}
+
+form.historyform &gt; .table &gt; tbody &gt; tr &gt; td, form.historyform &gt; .table &gt; tbody &gt; tr &gt; th, form.historyform &gt; .table &gt; tfoot &gt; tr &gt; td, form.historyform &gt; .table &gt; tfoot &gt; tr &gt; th, form.historyform &gt; .table &gt; thead &gt; tr &gt; td, form.historyform &gt; .table &gt; thead &gt; tr &gt; th {
+
+    border: 1px solid #555;
+}
+form.historyform &gt; .table &gt; caption + thead &gt; tr:first-child &gt; td, form.historyform &gt; .table &gt; caption + thead &gt; tr:first-child &gt; th, form.historyform &gt; .table &gt; colgroup + thead &gt; tr:first-child &gt; td, form.historyform &gt; .table &gt; colgroup + thead &gt; tr:first-child &gt; th, form.historyform &gt; .table &gt; thead:first-child &gt; tr:first-child &gt; td, form.historyform &gt; .table &gt; thead:first-child &gt; tr:first-child &gt; th {
+    border-top: 1px solid #555;
+}
+
+.click
+{
+}
+.w3_whatsapp_btn {
+
+    background-image: url('icon.png');
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    display: inline-block !important;
+
+    position: relative;
+
+    font-family: Arial,sans-serif;
+
+    letter-spacing: .4px;
+   cursor: pointer;
+
+    font-weight: 400;
+
+    text-transform: none;
+
+    color: #fff;
+
+    border-radius: 2px;
+
+    background-color: #5cbe4a;
+
+    background-repeat: no-repeat;
+
+    line-height: 1.2;
+
+    text-decoration: none;
+
+    text-align: left;
+
+}
+
+
+.w3_whatsapp_btn_small {
+
+    font-size: 12px;
+
+    background-size: 16px;
+
+    background-position: 5px 2px;
+
+    padding: 3px 6px 3px 25px;
+
+}
+
+ 
+
+.w3_whatsapp_btn_medium {
+
+    font-size: 16px;
+
+    background-size: 20px;
+
+    background-position: 4px 2px;
+  padding: 4px 6px 4px 30px;
+
+}
+
+ 
+
+.w3_whatsapp_btn_large {
+
+    font-size: 16px;
+
+    background-size: 20px;
+
+    background-position: 5px 5px;
+
+    padding: 8px 6px 8px 30px;
+
+    color: #fff;
+
+}
+
+a.whatsapp { color: #fff;}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px)
+{
+.cell_o{
+    width: 50%;
+    display: inline-block;
+    border-bottom: 1px solid #555;
+	border-left: 1px solid #555;
+	border-right: 1px solid #555;
+    text-align: left;
+}
+.cell_o:last-child{
+	border-right: 0px solid #555;
+}
+.cell_o:nth-child(even){
+	border-right: 0px solid #555;
+}
+
+
+.cell_r{
+    width: 50%;
+    display: inline-block;
+    border-bottom: 1px solid red;
+	border-right: 1px solid red;
+    text-align: left;
+	display: table-cell;
+}
+.cell_r:last-child{
+	border-right: 0px solid red;
+}
+.cell_r:nth-child(even){
+	border-right: 0px solid red;
+}
+
+form.historyform &gt; .table&gt;tbody&gt;tr&gt;td, form.historyform &gt; .table&gt;tbody&gt;tr&gt;th, form.historyform &gt; .table&gt;tfoot&gt;tr&gt;td, form.historyform &gt; .table&gt;tfoot&gt;tr&gt;th, form.historyform &gt; .table&gt;thead&gt;tr&gt;td, form.historyform &gt; .table&gt;thead&gt;tr&gt;th {
+    padding: 0px;
+}
+
+}
+</style>
+<script language="javascript" type="text/javascript">
+//&lt;![CDATA[
+
+function fcousHeading()
+{
+document.getElementById("chHeading").focus();
+}
+
+function newcss()
+{
+	var sess_color_value="W";
+			
+				if(sess_color_value=='B' )
+	{
+				applycssblack1();
+	}
+	else if(sess_color_value=='W' )
+	{
+				applycsswhite1();
+	}
+	else if (parent.document.getElementById("txt_css").value=='black')
+	{
+	parent.applycssblack();
+	}
+	else if (parent.document.getElementById("txt_css").value=='white')
+	{
+	parent.applycsswhite();
+	}
+}
+function openpopup(popurl)
+{
+	var winpops=window.open(popurl,"","width=400,height=400,scrollbars,menubar,resizable")
+}
+
+
+
+
+//]]&gt;
+</script>
+<script language="javascript" type="text/javascript">
+ //&lt;![CDATA[
+var mytextsizer=new fluidtextresizer({
+	controlsdiv: "sizecontroldiv", //id of special div containing your resize controls. Enter "" if not defined
+	targets: ["body"], //target elements to resize text within: ["selector1", "selector2", etc]
+	levels: 1, //number of levels users can magnify (or shrink) text
+	persist: "session", //enter "session" or "none"
+	animate: 200 //animation duration of text resize. Enter 0 to disable
+})
+
+ //]]&gt;
+
+ function selectFun3(element) 
+{
+
+}
+</script>
+<script language="JavaScript" src="../includes/javascript/xmlhttp.js" type="text/javascript"></script>
+<script type="text/javascript">var csrfMagicToken = "sid:99870215ff6b0b6979b93a01895df7748b79f73e49e8619a03f14cfc2099286f,1508823311";var csrfMagicName = "__csrf_magic";</script><script src="csrf-magic.js" type="text/javascript"></script>
+<form action="" class="historyform" method="post" name="frm" onload="funonHistoryload();"><input name="__csrf_magic" type="hidden" value="sid:99870215ff6b0b6979b93a01895df7748b79f73e49e8619a03f14cfc2099286f,1508823311"/>
+<div align="center" style="margin-top:-5px;">
+<h2 class="h1classH" id="chHeading" tabindex="0">Civil Court Junior  Division , Akole</h2>
+<div id="shareSelect"><span class="heading row"><label tabindex="0"><h3 class="h2class" style="font-weight:bold;">Case Details</h3></label></span><table align="center" border="1" class="table table-responsive case_details_table" style="font-size:1em" width="100%"><tbody><tr><td><label>Case Type </label></td><td colspan="3">R.C.S. - Reg.Civil Suit</td></tr><tr><td><label>Filing Number</label></td><td>1300051/2009  </td><td><label>Filing Date</label></td><td> 29-04-2009  </td></tr><tr><td><label>Registration Number</label></td><td><label>1300051/2009</label></td><td><label>Registration Date</label></td><td><label>29-04-2009</label></td></tr><tr><td><b><label>CNR Number</label></b></td><td colspan="3"><b>MHAH160002722009</b>  <em style="color:red;"> (Note the CNR number for future reference)</em></td></tr></tbody></table><br/><h2 class="h2class" style="clear:both;color:red;font-weight:bold;display:block;">Case Status</h2><table border="1" class="table_r table table-responsive text-left" style="font-size:1.1em"><tbody><tr><td><label><strong>First Hearing Date </strong></label></td><td colspan="3"><strong>15th July 2009</strong></td></tr><tr><td><label><strong>Next Hearing Date</strong></label></td><td colspan="3"><strong>24th October 2017</strong></td></tr><tr><td><label><strong>Stage of Case</strong></label></td><td colspan="3"><label><strong>Evidence Part Heard</strong></label></td></tr><tr><td><label><strong>Court Number and Judge</strong></label></td><td colspan="3"><label><strong> 1-CIVIL JUDGE J.D. J.M.F.C.AKOLE</strong></label></td></tr></tbody></table></div><br/><h2 class="h2class" style="font-weight:bold;">Petitioner and Advocate</h2><table border="1" class="table_o table table-responsive Petitioner_Advocate_table" style="text-align:left"><tbody><tr><td>1) Ganpat  Aaba Zade 1<br/>   Advocate- Pathan A. A.<br/><br/>2)  Kashinath Ganpat Zade<br/>    Advocate-Pathan A. A.<br/></td></tr></tbody></table><br/><h2 class="h2class" style="font-weight:bold;">Respondent and Advocate</h2><table border="1" class="table_o table table-responsive Respondent_Advocate_table" style="text-align:left"><tbody><tr><td>1) Nivruti Mahadu Zade 1<br/>   Advocate - Wakchoure S. B. <br/>2)  Changunabai Nivruti Zade<br/>    Advocate-Wakchoure S. B.<br/></td></tr></tbody></table><br/><h2 class="h2class" style="font-weight:bold;">Acts</h2><table border="1" class="acts_table table table-responsive" id="act_table" width="100%"><tbody><tr><th><b>Under Act(s)</b></th><th><b>Under Section(s)</b></th></tr><tr><td align="left" style="padding-left:5px;" width="50%">Civil Procedure codes</td><td align="left" style="padding-left:5px;" width="50%">---</td></tr></tbody></table></div><br/><table id="historyheading" style="text-align:center" width="100%"><tbody><tr><td><h2 class="h2class" style="clear:both;font-weight:bold;text-align:center;">History of Case Hearing</h2></td></tr></tbody></table><br/><table align="center" border="1" class="history_table table table-responsive" width="100%"><thead><tr><th scope="col">Judge</th><th scope="col" style="">Business On Date</th><th scope="col">Hearing Date</th><th scope="col">Purpose of hearing</th></tr></thead><tbody><tr><td align="left"></td><td align="left">15-07-2009</td><td>25-08-2009</td><td> Awaiting Summons</td></tr><tr><td align="left"></td><td align="left">25-08-2009</td><td>05-09-2009</td><td> Awaiting Summons</td></tr><tr><td align="left"></td><td align="left">05-09-2009</td><td>12-10-2009</td><td> Awaiting Summons</td></tr><tr><td align="left"></td><td align="left">12-10-2009</td><td>20-11-2009</td><td> Awaiting Summons</td></tr><tr><td align="left"></td><td align="left">20-11-2009</td><td>19-12-2009</td><td> Awaiting Summons</td></tr><tr><td align="left"></td><td align="left">19-12-2009</td><td>12-02-2010</td><td> Awaiting Summons</td></tr><tr><td align="left"></td><td align="left">12-02-2010</td><td>05-03-2010</td><td> Written Statement</td></tr><tr><td align="left"></td><td align="left">05-03-2010</td><td>30-03-2010</td><td> Written Statement</td></tr><tr><td align="left"></td><td align="left">30-03-2010</td><td>28-04-2010</td><td> Written Statement</td></tr><tr><td align="left"></td><td align="left">28-04-2010</td><td>16-06-2010</td><td> Written Statement</td></tr><tr><td align="left"></td><td align="left">16-06-2010</td><td>06-07-2010</td><td> Written Statement</td></tr><tr><td align="left"></td><td align="left">06-07-2010</td><td>28-07-2010</td><td> Written Statement</td></tr><tr><td align="left"></td><td align="left">28-07-2010</td><td>11-08-2010</td><td> Argument on Pre_Issues</td></tr><tr><td align="left"></td><td align="left">11-08-2010</td><td>15-09-2010</td><td> Argument on Pre_Issues</td></tr><tr><td align="left"></td><td align="left">15-09-2010</td><td>28-09-2010</td><td> Argument on Pre_Issues</td></tr><tr><td align="left"></td><td align="left">28-09-2010</td><td>11-10-2010</td><td> Argument on Pre_Issues</td></tr><tr><td align="left"></td><td align="left">11-10-2010</td><td>20-11-2010</td><td> Argument on Pre_Issues</td></tr><tr><td align="left"></td><td align="left">20-11-2010</td><td>10-12-2010</td><td> Argument on Pre_Issues</td></tr><tr><td align="left"></td><td align="left">10-12-2010</td><td>18-01-2011</td><td> Argument on Pre_Issues</td></tr><tr><td align="left"></td><td align="left">18-01-2011</td><td>10-02-2011</td><td> Argument on Pre_Issues</td></tr><tr><td align="left"></td><td align="left">10-02-2011</td><td>25-02-2011</td><td> Argument on Exh.____Unready</td></tr><tr><td align="left"></td><td align="left">25-02-2011</td><td>08-03-2011</td><td> Argument on Exh.____Unready</td></tr><tr><td align="left"></td><td align="left">08-03-2011</td><td>07-04-2011</td><td> Argument on Exh.____Unready</td></tr><tr><td align="left"></td><td align="left">07-04-2011</td><td>28-04-2011</td><td> Argument on Exh.____Unready</td></tr><tr><td align="left"></td><td align="left">28-04-2011</td><td>17-06-2011</td><td> Argument on Exh.____Unready</td></tr><tr><td align="left"></td><td align="left">17-06-2011</td><td>05-07-2011</td><td> Argument on Exh.____Unready</td></tr><tr><td align="left"></td><td align="left">05-07-2011</td><td>21-07-2011</td><td> Argument on Exh.____Unready</td></tr><tr><td align="left"></td><td align="left">21-07-2011</td><td>25-08-2011</td><td> Argument on Exh.____Unready</td></tr><tr><td align="left"></td><td align="left">25-08-2011</td><td>20-09-2011</td><td> Argument on Exh.____Unready</td></tr><tr><td align="left"></td><td align="left">20-09-2011</td><td>10-10-2011</td><td> Argument on Exh.____Unready</td></tr><tr><td align="left"></td><td align="left">10-10-2011</td><td>14-11-2011</td><td> Argument on Exh.____Unready</td></tr><tr><td align="left"></td><td align="left">14-11-2011</td><td>19-12-2011</td><td> Argument on Exh.____Unready</td></tr><tr><td align="left"></td><td align="left">19-12-2011</td><td>25-01-2012</td><td> Argument on Exh.____Unready</td></tr><tr><td align="left"></td><td align="left">25-01-2012</td><td>01-02-2012</td><td> Argument on Exh.____Unready</td></tr><tr><td align="left"></td><td align="left">01-02-2012</td><td>07-03-2012</td><td> Argument on Exh.____Unready</td></tr><tr><td align="left"></td><td align="left">07-03-2012</td><td>23-04-2012</td><td> Argument on Exh.____Unready</td></tr><tr><td align="left"></td><td align="left">23-04-2012</td><td>04-07-2012</td><td> Argument on Exh.____Unready</td></tr><tr><td align="left">JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">04-07-2012</td><td>02-08-2012</td><td> Argument on Exh.____Unready</td></tr><tr><td align="left">JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">02-08-2012</td><td>10-08-2012</td><td> Argument on Exh.____Unready</td></tr><tr><td align="left">JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">10-08-2012</td><td>14-09-2012</td><td> Argument on Exh.____Unready</td></tr><tr><td align="left">JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">14-09-2012</td><td>28-09-2012</td><td> Argument on Exh.____Unready</td></tr><tr><td align="left">JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">28-09-2012</td><td>05-11-2012</td><td> Hearing</td></tr><tr><td align="left">JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">05-11-2012</td><td>05-12-2012</td><td> Hearing</td></tr><tr><td align="left">JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">05-12-2012</td><td>04-01-2013</td><td> Hearing</td></tr><tr><td align="left">JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">04-01-2013</td><td>18-01-2013</td><td> Hearing</td></tr><tr><td align="left">JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">18-01-2013</td><td>30-01-2013</td><td> Hearing</td></tr><tr><td align="left">JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">30-01-2013</td><td>13-02-2013</td><td> Hearing</td></tr><tr><td align="left">JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">13-02-2013</td><td>25-02-2013</td><td> Hearing</td></tr><tr><td align="left">JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">25-02-2013</td><td>11-03-2013</td><td> Hearing</td></tr><tr><td align="left">JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">11-03-2013</td><td>05-04-2013</td><td> Hearing</td></tr><tr><td align="left">JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">05-04-2013</td><td>12-06-2013</td><td> Hearing</td></tr><tr><td align="left">JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">12-06-2013</td><td>10-07-2013</td><td> Hearing</td></tr><tr><td align="left">JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">10-07-2013</td><td>12-08-2013</td><td> Hearing</td></tr><tr><td align="left">JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">12-08-2013</td><td>23-09-2013</td><td> Hearing</td></tr><tr><td align="left">JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">23-09-2013</td><td>29-10-2013</td><td> Hearing</td></tr><tr><td align="left">JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">29-10-2013</td><td>18-11-2013</td><td> Hearing</td></tr><tr><td align="left">JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">18-11-2013</td><td>29-11-2013</td><td> Hearing</td></tr><tr><td align="left">JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">29-11-2013</td><td>13-12-2013</td><td> Hearing</td></tr><tr><td align="left">JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">13-12-2013</td><td>22-01-2014</td><td> Hearing</td></tr><tr><td align="left">JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">22-01-2014</td><td>25-02-2014</td><td> Evidence Part Heard</td></tr><tr><td align="left">JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">25-02-2014</td><td>04-04-2014</td><td> Evidence Part Heard</td></tr><tr><td align="left">JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">04-04-2014</td><td>23-06-2014</td><td> Evidence Part Heard</td></tr><tr><td align="left">JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">23-06-2014</td><td>22-07-2014</td><td> Evidence Part Heard</td></tr><tr><td align="left">JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">22-07-2014</td><td>19-08-2014</td><td> Evidence Part Heard</td></tr><tr><td align="left">JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">19-08-2014</td><td>22-09-2014</td><td> Evidence Part Heard</td></tr><tr><td align="left">JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">22-09-2014</td><td>27-10-2014</td><td> Evidence Part Heard</td></tr><tr><td align="left">JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">27-10-2014</td><td>01-11-2014</td><td> Evidence Part Heard</td></tr><tr><td align="left">JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">01-11-2014</td><td>11-11-2014</td><td> Evidence Part Heard</td></tr><tr><td align="left">JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">11-11-2014</td><td>08-12-2014</td><td> Evidence Part Heard</td></tr><tr><td align="left">JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">08-12-2014</td><td>28-01-2015</td><td> Evidence Part Heard</td></tr><tr><td align="left">JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">28-01-2015</td><td>25-02-2015</td><td> Evidence Part Heard</td></tr><tr><td align="left">JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">25-02-2015</td><td>07-04-2015</td><td> Evidence Part Heard</td></tr><tr><td align="left">JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">07-04-2015</td><td>23-06-2015</td><td> Evidence Part Heard</td></tr><tr><td align="left">JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">23-06-2015</td><td>03-07-2015</td><td> Evidence Part Heard</td></tr><tr><td align="left">JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">03-07-2015</td><td>20-07-2015</td><td> Evidence Part Heard</td></tr><tr><td align="left">JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">20-07-2015</td><td>03-08-2015</td><td> Evidence Part Heard</td></tr><tr><td align="left">JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">03-08-2015</td><td>17-08-2015</td><td> Evidence Part Heard</td></tr><tr><td align="left">JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">17-08-2015</td><td>23-09-2015</td><td> Evidence Part Heard</td></tr><tr><td align="left">JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">23-09-2015</td><td>29-09-2015</td><td> Evidence Part Heard</td></tr><tr><td align="left">JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">29-09-2015</td><td>12-10-2015</td><td> Evidence Part Heard</td></tr><tr><td align="left">JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">12-10-2015</td><td>26-10-2015</td><td> Evidence Part Heard</td></tr><tr><td align="left">JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">26-10-2015</td><td>30-10-2015</td><td> Evidence Part Heard</td></tr><tr><td align="left">JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">30-10-2015</td><td>04-11-2015</td><td> Evidence Part Heard</td></tr><tr><td align="left">JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">04-11-2015</td><td>18-11-2015</td><td> Evidence Part Heard</td></tr><tr><td align="left">JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">18-11-2015</td><td>24-11-2015</td><td> Evidence Part Heard</td></tr><tr><td align="left"></td><td align="left">24-11-2015</td><td>02-12-2015</td><td> Evidence Part Heard</td></tr><tr><td align="left">CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">02-12-2015</td><td>11-12-2015</td><td> Evidence Part Heard</td></tr><tr><td align="left">CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">11-12-2015</td><td>29-02-2016</td><td> Evidence Part Heard</td></tr><tr><td align="left">CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left"><a href="#" onclick="viewBusiness('4','26','20160404','202713000512009','1','Pending','29-02-2016','1','')">29-02-2016</a></td><td>04-04-2016</td><td> Evidence Part Heard</td></tr><tr><td align="left">JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left"><a href="#" onclick="viewBusiness('4','26','20160419','202713000512009','1','Pending','04-04-2016','7','')">04-04-2016</a></td><td>19-04-2016</td><td> Evidence Part Heard</td></tr><tr><td align="left">JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left"><a href="#" onclick="viewBusiness('4','26','20160613','202713000512009','1','Pending','19-04-2016','7','')">19-04-2016</a></td><td>13-06-2016</td><td> Evidence Part Heard</td></tr><tr><td align="left">CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left"><a href="#" onclick="viewBusiness('4','26','20160725','202713000512009','1','Pending','13-06-2016','1','')">13-06-2016</a></td><td>25-07-2016</td><td> Evidence Part Heard</td></tr><tr><td align="left">3rd JT. CIVIL JUDGE J.D. J.M.F.C. SANGAMNER</td><td align="left">25-07-2016</td><td>23-08-2016</td><td> Evidence Part Heard</td></tr><tr><td align="left">CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left"><a href="#" onclick="viewBusiness('4','26','20161005','202713000512009','1','Pending','23-08-2016','1','')">23-08-2016</a></td><td>05-10-2016</td><td> Evidence Part Heard</td></tr><tr><td align="left">CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">05-10-2016</td><td>04-11-2016</td><td> Evidence Part Heard</td></tr><tr><td align="left">CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left"><a href="#" onclick="viewBusiness('4','26','20161128','202713000512009','1','Pending','04-11-2016','1','')">04-11-2016</a></td><td>28-11-2016</td><td> Evidence Part Heard</td></tr><tr><td align="left">CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">28-11-2016</td><td>13-01-2017</td><td> Evidence Part Heard</td></tr><tr><td align="left">CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">13-01-2017</td><td>21-01-2017</td><td> Evidence Part Heard</td></tr><tr><td align="left">CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">21-01-2017</td><td>21-02-2017</td><td> Evidence Part Heard</td></tr><tr><td align="left">CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left"><a href="#" onclick="viewBusiness('4','26','20170324','202713000512009','1','Pending','21-02-2017','1','')">21-02-2017</a></td><td>24-03-2017</td><td> Evidence Part Heard</td></tr><tr><td align="left">CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">24-03-2017</td><td>12-06-2017</td><td> Evidence Part Heard</td></tr><tr><td align="left">CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left"><a href="#" onclick="viewBusiness('4','26','20170714','202713000512009','1','Pending','12-06-2017','1','')">12-06-2017</a></td><td>14-07-2017</td><td> Evidence Part Heard</td></tr><tr><td align="left">CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left"><a href="#" onclick="viewBusiness('4','26','20170809','202713000512009','1','Pending','14-07-2017','1','')">14-07-2017</a></td><td>09-08-2017</td><td> Evidence Part Heard</td></tr><tr><td align="left">CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left">09-08-2017</td><td>25-09-2017</td><td> Evidence Part Heard</td></tr><tr><td align="left">CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left"><a href="#" onclick="viewBusiness('4','26','20171024','202713000512009','1','Pending','25-09-2017','1','')">25-09-2017</a></td><td>24-10-2017</td><td> Evidence Part Heard</td></tr>
+</tbody></table><br/><div style="clear:both;"><h2 class="h2class" style="font-weight:bold;text-align:center;width:100%">Case Transfer Details Between The Courts</h2></div><table align="center" border="1" class="transfer_table table table-responsive" width="100%"><tbody><tr><th scope="col"><label style="font-weight:bold;">Regn. Number</label></th><th scope="col"><label style="font-weight:bold;">Transfer Date</label></th><th scope="col"><label style="font-weight:bold;">From Court Number and Judge</label></th><th scope="col"><label style="font-weight:bold;">To Court Number and Judge</label></th></tr><tr><td align="left" scope="row">1300051/2009</td><td align="center">30-11-2015 </td><td align="left">2 - </td><td align="left" style="">1 - CIVIL JUDGE J.D. J.M.F.C.AKOLE</td></tr><tr><td align="left" scope="row">1300051/2009</td><td align="center">05-03-2016 </td><td align="left">1 - JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left" style="">7 - JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td></tr><tr><td align="left" scope="row">1300051/2009</td><td align="center">10-06-2016 </td><td align="left">7 - JT. CIVIL JUDGE J.D. J.M.F.C.AKOLE</td><td align="left" style="">1 - CIVIL JUDGE J.D. J.M.F.C.AKOLE</td></tr></tbody></table><br/>
+<script type="text/javascript">CsrfMagic.end();</script>
+</form>
+</div>
