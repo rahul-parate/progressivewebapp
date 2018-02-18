@@ -14,5 +14,8 @@ module.exports = function(app) {
   app.route('/postcontent/:content')
     .post(controllervar.encrypt_content);
 
+  app.route('/postdecontent/:textdata')
+    .post(controllervar.decrypt_content);
+
 };
 

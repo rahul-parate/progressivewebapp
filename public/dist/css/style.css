@@ -1,0 +1,45 @@
+.responsive-tabs-container{
+padding-top: 5%;
+}
+
+.nav-tabs {
+    font-size: 20px;
+}
+.tab-content{
+padding: 2%;
+}
+.ng-pristine{
+width:100%;
+border-radius: 4px;
+}
+
+.header{
+    padding: 1em;
+    color: white;
+    right: 0;
+    left: 0;
+    background-color: black;
+    clear: left;
+    text-align: center;
+    width: 100%;
+}
+h1{
+background-color: blue;
+padding: 2%;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: blue;
+   color: white;
+   text-align: center;
+}
+.error{
+	width: 100%;
+}
+.btndiv{
+	padding: 5%;
+}

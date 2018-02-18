@@ -5,7 +5,8 @@ var Schema = mongoose.Schema;
 
 var savedataSchema = new Schema({
   Original_test:String,
-  encrypted_text:String
+  encrypted_text:String,
+  en_Array: String
 
 });
 

@@ -8,13 +8,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Optimize mobile viewport -->
     <link rel="stylesheet" href="dist/css/bootstrap.min.css">
-   <!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.js"></script> -->
     <link rel="stylesheet" href="dist/css/bootstrap-responsive-tabs.css">
     <link rel="shortcut icon" href="#" />
     <link rel="stylesheet" href="dist/css/jquery-ui.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Encrypt anything</title>
+    <title>SecureText</title>
      <link rel="stylesheet" href="dist/css/style.css">
     <!-- SCROLLS -->
    <!-- load bootstrap -->
@@ -27,32 +24,91 @@
 </head>
 <!-- SET THE CONTROLLER AND GET ALL TODOS -->
 <body ng-controller="mainController">
+    <div class="header text-center">
+        <h1>SecureText</h1>
+    </div>
     <div class="container">
-        <div class="row">
-            <div class="col-sm-6 col-md-6 col-lg-6">
-                <textarea ng-model="formData.content"></textarea>
+        
+        <ul class="nav nav-tabs responsive-tabs" id="myTab">
+          <li class="active"><a href="#encryptForm" id="tab_adv">Encrypt</a></li>
+          <li><a href="#decryptForm" id="tab_case">Decrypt</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active" id="encryptForm">
+                <div class="row">
+                    <div>
+                        <textarea ng-model="formData.content"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="text-center btndiv"><buttonv class="btn btn-primary btn-md" ng-click="encrypt()">Show me the magic</button></div>
+                    
+                </div>
+                <div class="text-center">
+                    <h3 ng-show='{{content}}'>Encrypted Text : </h3>
+                    {{content}}
+                </div>
+            </div>
+
+            <div class="tab-pane" id="decryptForm">
+                <div class="row">
+                    <div>
+                        <textarea ng-model="decryptformData.content"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="text-center btndiv"><button class="btn btn-primary btn-md" ng-click="decrypt()">Revert the magic</button></div>
+                    
+                </div>
+                <div class="text-center">
+                    <h3 ng-show='{{decryptcontent}}'> Decrypted Text : </h3>
+                    {{decryptcontent}}
+                </div>
+                
+            </div>
+            <div class="text-center error">
+                <h3>{{nodata}}</h3>
             </div>
         </div>
-        <div class="row">
-            <div class="col-offset-6"><button ng-click="encrypt()">Show me the magic</button></div>
-            
-        </div>
-        {{content}}
     </div>
     
-
-
+        
+    <div class="text-center footer">
+        <h6>developed by: Woofie</h6>
+    </div>
+    
+    
 
 </body>
 
 <script src="dist/js/jquery.min.js"></script><!-- load jquery -->
 <script src="dist/js/jquery-ui.js"></script>
 <script src="dist/js/bootstrap.min.js"></script>
+<script src="dist/js/jquery.bootstrap-responsive-tabs.min.js"></script>
 <!-- <script src="dist/js/jquery-ui.min.js"></script> -->
 <script src="dist/js/angular.min.js"></script>
 <script src="module.js"></script>
+<script src="serviceworker.js"></script>
 <script type="text/javascript">
+if ('serviceWorker' in navigator) {
+  console.log('CLIENT: service worker registration in progress.');
+  navigator.serviceWorker
+            .register('/serviceworker.js')
+            .then(function() {
+                console.log('CLIENT: service worker registration complete.');
+            }, function() {
+                console.log('CLIENT: service worker registration failure.');
+            });
+} else {
+  console.log('CLIENT: service worker is not supported.');
+}
     $(document).ready(function(){
+       $('.responsive-tabs').responsiveTabs({
+            accordionOn: ['xs', 'sm'] // xs, sm, md, lg
+        });
+       if ($('.error').is(":visible") ) {
+            $('.error').fadeOut(10000);
+        }
        
        
 });

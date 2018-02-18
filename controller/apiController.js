@@ -14,22 +14,31 @@ exports.encrypt_content = function(req, res) {
 	ls.stdout.on('data', (data) => {
 	  console.log(`stdout: ${data}`);
 	  var resdata =  data;
-	  console.log(typeof data);
+	  var datasplit = String(resdata).split(']');
+	  var enarray = datasplit[0].replace(/\[/g,"");
+	  var enarray = enarray.replace(/\n/g,"");
+	  console.log(enarray);
+	  console.log(datasplit);
+	  var resultdata = datasplit[1].replace(/\n/g,"");
+	  // console.log(typeof data);
 	  var savedata = {};
 	  savedata['Original_test'] = input;
-	  savedata['encrypted_text'] = resdata;
-	  var save_mongo = new saveinmongo(savedata);
-	  save_mongo.save(function(err, task) {
+	  savedata['encrypted_text'] = resultdata;
+	  savedata['en_Array']= enarray;
+	  // var save_mongo = new saveinmongo(savedata);
+	  var options = { upsert: true, new: true, setDefaultsOnInsert: true };
+	  saveinmongo.findOneAndUpdate({Original_test: input}, savedata, options, function(err, task) {
 	    if (err)
 	      res.send(err);
-	    console.log(task);
-	    res.json({result : task.encrypted_text, status: 200});
+	    else
+	      console.log(task);
+	      res.json({result : task.encrypted_text, status: 200});
 	  });
 	});
 
 	ls.stderr.on('data', (data) => {
 	  console.log(`stderr: ${data}`);
-	  res.json({status: 200});
+	  // res.json({status: 200});
 	  console.log("PROBLEM");
 	});
 
@@ -39,5 +48,32 @@ exports.encrypt_content = function(req, res) {
 };
 
 
+exports.decrypt_content = function(req, res) {
+	console.log(req.params);
+	var decrypttext = req.params.textdata;
+	
+	console.log(decrypttext);
+	saveinmongo.find({'encrypted_text' : decrypttext}, function(err, task) {
+	    if (err)
+	      res.send(err);
+	    console.log(task[0].en_Array);
+	    const spawn = require('child_process').spawn;
+	    const ls = spawn('python', ['decryption1.py', decrypttext, task[0].en_Array]);
+	    ls.stdout.on('data', (data) => {
+		  console.log(`stdout: ${data}`);
+		  console.log(data);
+		  res.send(data);
+		  });
+		ls.stderr.on('data', (data) => {
+		  console.log(`stderr: ${data}`);
+		  // res.json({status: 200});
+		  console.log("PROBLEM");
+		});
 
+		ls.on('close', (code) => {
+		  console.log(`child process exited with code ${code}`);
+		});
+	 });
+	
+};
 
